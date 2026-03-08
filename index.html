@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mennour Djamel Eddine - Security Engineer</title>
+    <title>Mennour Djamel Eddine - Security Developer</title>
 
     <!-- SEO & Metadata -->
     <meta name="description"
@@ -17,12 +17,21 @@
 </head>
 
 <body>
-    <div class="bg-grid"></div>
+    <!-- Custom Interactive Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Vibrant Animated Background Blobs -->
+    <div class="bg-animated">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Mennour Djamel Eddine</a>
+            <a href="#home" class="logo">M.D.<span class="text-accent">Eddine</span></a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -34,38 +43,42 @@
     <!-- Hero -->
     <section id="home" class="hero">
         <div class="container reveal">
-            <div class="hero-glow"></div>
             <div class="hero-badge">
-                <i class="fas fa-shield-halved"></i>
-                <span>SOC Engineering Focus</span>
+                <i class="fas fa-terminal"></i>
+                <span id="typewriter"></span><span class="cursor-blink">|</span>
             </div>
-            <h1>Securing Systems. <br> <span class="text-gradient">Engineering Defense.</span></h1>
+            <h1>Defending Systems. <br> <span class="text-gradient">Building Intel.</span></h1>
             <p class="hero-description">
-                I am a 3rd-year cybersecurity student dedicated to mastering defensive operations, building practical
-                tools, and analyzing network threats.
+                I am a 3rd-year cybersecurity student dedicated to mastering defensive operations,
+                building practical tools, and analyzing complex network threats.
             </p>
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">Systems & Projects</a>
-                <a href="mailto:djamel.eddine.mennour1@gmail.com" class="btn btn-secondary">Contact Me</a>
+                <a href="#projects" class="btn btn-primary magnetic-btn">
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary magnetic-btn">
+                    <span>Contact Me</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Bento Grid Section (About & Skills) -->
+    <!-- Glassmorphic Grid Section (About & Skills) -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Academic & Technical Profile</h2>
+                <h2 class="section-title">Academic & Technical <span class="text-accent">Profile</span></h2>
                 <p class="section-desc">A blend of foundational computer science knowledge and specialized defensive
                     security practices.</p>
             </div>
 
-            <div class="bento-grid" id="bento-container">
+            <div class="glass-grid">
 
                 <!-- Main About Card -->
-                <div class="bento-card col-span-2 row-span-2 reveal bento-glow">
-                    <div class="icon-wrapper"><i class="fas fa-user-graduate"></i></div>
-                    <div class="bento-content" style="margin-top: auto; padding-top: 100px;">
+                <div class="glass-card col-span-2 row-span-2 reveal tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="icon-wrapper glass-icon"><i class="fas fa-user-ninja"></i></div>
+                    <div class="card-content">
                         <h3>Driven by Defensive Security</h3>
                         <p style="margin-bottom: 16px;">
                             My primary objective is becoming a highly capable Security Operations Center (SOC) Engineer,
@@ -80,27 +93,29 @@
                 </div>
 
                 <!-- Core Stack Card -->
-                <div class="bento-card reveal bento-glow" style="transition-delay: 0.1s;">
-                    <div class="icon-wrapper"><i class="fas fa-code"></i></div>
-                    <div class="bento-content" style="margin-top: auto; padding-top: 80px;">
+                <div class="glass-card reveal tilt-card" style="transition-delay: 0.1s;">
+                    <div class="card-glow"></div>
+                    <div class="icon-wrapper glass-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="card-content">
                         <h3>Core Stack</h3>
-                        <ul class="minimal-list">
-                            <li>C Programming</li>
-                            <li>Python Development</li>
-                            <li>Java Software Engineering</li>
+                        <ul class="fancy-list">
+                            <li><i class="fas fa-check-circle"></i> C Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Python Dev</li>
+                            <li><i class="fas fa-check-circle"></i> Java Engineering</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Security Focus Card -->
-                <div class="bento-card reveal bento-glow" style="transition-delay: 0.2s;">
-                    <div class="icon-wrapper"><i class="fas fa-radar"></i></div>
-                    <div class="bento-content" style="margin-top: auto; padding-top: 80px;">
+                <div class="glass-card reveal tilt-card" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="icon-wrapper glass-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <div class="card-content">
                         <h3>Security Focus</h3>
-                        <ul class="minimal-list">
-                            <li>Network Intrusion Detection</li>
-                            <li>Malware Behavior Research</li>
-                            <li>Defensive Scripting</li>
+                        <ul class="fancy-list">
+                            <li><i class="fas fa-check-circle"></i> NIDS Development</li>
+                            <li><i class="fas fa-check-circle"></i> Malware Behavior</li>
+                            <li><i class="fas fa-check-circle"></i> SOC Analytics</li>
                         </ul>
                     </div>
                 </div>
@@ -113,64 +128,57 @@
     <section id="projects" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Applied Research</h2>
+                <h2 class="section-title">Applied <span class="text-gradient">Research</span></h2>
             </div>
 
-            <div class="showcase-grid">
+            <div class="project-grid">
 
                 <!-- Project 1 -->
-                <div class="showcase-card reveal">
-                    <div class="showcase-info">
-                        <div class="hero-badge" style="margin-bottom: 16px;">
-                            <i class="fab fa-windows"></i>
-                            <span>Public Research</span>
-                        </div>
-                        <h3 class="showcase-title">Advanced Windows Keylogger</h3>
-                        <p class="showcase-desc">
+                <div class="glass-card project-card tilt-card reveal">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-badge bg-public">Public Research</div>
+                        <i class="fas fa-keyboard project-huge-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Advanced Windows Keylogger</h3>
+                        <p class="project-desc">
                             Research and development of an advanced keylogger specifically targeting Windows
-                            environments. Implemented utilizing stealth methods and obfuscation techniques to bypass
-                            basic detection mechanisms, aiming to understand advanced offensive techniques for improved
-                            defensive posturing.
+                            environments utilizing stealth methods and obfuscation techniques.
                         </p>
-                        <div class="showcase-tags">
-                            <span class="showcase-tag">C/C++</span>
-                            <span class="showcase-tag">Windows API</span>
-                            <span class="showcase-tag">Stealth Methods</span>
+                        <div class="project-tags">
+                            <span class="tag">C/C++</span>
+                            <span class="tag">Windows API</span>
+                            <span class="tag">Stealth</span>
                         </div>
                         <a href="https://github.com/Mennour-Djamel-Eddine/Windows-Key-Logger" target="_blank"
-                            class="btn btn-secondary">
-                            <i class="fab fa-github"></i> View Source
+                            class="btn btn-outline" style="margin-top:24px;">
+                            <i class="fab fa-github"></i> Source Code
                         </a>
-                    </div>
-                    <div class="showcase-visual">
-                        <i class="fas fa-keyboard"></i>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="showcase-card reveal">
-                    <div class="showcase-info">
-                        <div class="hero-badge" style="margin-bottom: 16px;">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>In Development (Private)</span>
-                        </div>
-                        <h3 class="showcase-title">Advanced NIDS</h3>
-                        <p class="showcase-desc">
-                            Currently developing an advanced Network Intrusion Detection System. Focused heavily on SOC
-                            engineering principles, analyzing local traffic patterns, detecting anomalies, and
-                            triggering actionable alerts on suspicious network activity in real-time.
-                        </p>
-                        <div class="showcase-tags">
-                            <span class="showcase-tag">Python</span>
-                            <span class="showcase-tag">Packet Analysis</span>
-                            <span class="showcase-tag">SOC Engineering</span>
-                        </div>
-                        <button class="btn btn-secondary" style="opacity: 0.5; cursor: not-allowed;">
-                            <i class="fas fa-lock"></i> Source Private
-                        </button>
+                <div class="glass-card project-card tilt-card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-badge bg-private">In Development</div>
+                        <i class="fas fa-network-wired project-huge-icon"></i>
                     </div>
-                    <div class="showcase-visual">
-                        <i class="fas fa-network-wired"></i>
+                    <div class="card-content">
+                        <h3 class="project-title">Advanced NIDS</h3>
+                        <p class="project-desc">
+                            Developing a Network Intrusion Detection System focused heavily on SOC engineering
+                            principles, analyzing local traffic patterns, and detecting anomalies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Packet Analysis</span>
+                            <span class="tag">Detection Rules</span>
+                        </div>
+                        <button class="btn btn-outline disabled" style="margin-top:24px;">
+                            <i class="fas fa-lock"></i> Private Repo
+                        </button>
                     </div>
                 </div>
 
@@ -179,21 +187,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container footer-content reveal">
             <div class="footer-left">
-                <a href="#home" class="logo">Mennour.</a>
-                <p>3rd-year cybersecurity student building secure systems in Constantine, Algeria.</p>
+                <h2 class="footer-logo">M.D.Eddine</h2>
+                <p>Building secure systems and defensive tooling in Constantine, Algeria.</p>
             </div>
             <div class="footer-links">
-                <a href="https://github.com/Mennour-Djamel-Eddine" target="_blank" class="footer-link">GitHub</a>
+                <a href="https://github.com/Mennour-Djamel-Eddine" target="_blank" class="footer-icon hover-bounce"><i
+                        class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/djamel-eddine-mennour-9571222a3/" target="_blank"
-                    class="footer-link">LinkedIn</a>
-                <a href="mailto:djamel.eddine.mennour1@gmail.com" class="footer-link">Email</a>
+                    class="footer-icon hover-bounce"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:djamel.eddine.mennour1@gmail.com" class="footer-icon hover-bounce"><i
+                        class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Three.js could be added here in the future for even more crazy 3D backgrounds -->
     <script src="main.js"></script>
 </body>
 
